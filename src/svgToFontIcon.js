@@ -63,8 +63,8 @@ svgtofont({
     const newFile = fileBuffer
       .toString()
       .replace(
-        `<link rel="stylesheet" href="icon.css" />`,
-        `<link rel="stylesheet" href="./font-icons/icon.css" />`
+        `<link rel="stylesheet" href="fotIconStyle.css" />`,
+        `<link rel="stylesheet" href="./font-icons/fotIconStyle.css" />`
       )
     return fsPromises.writeFile(path.join(process.cwd(), "index.html"), newFile)
   })
