@@ -1,0 +1,33 @@
+@font-face {font-family: "icon";
+  src: url('icon.eot?t=1634272190496'); /* IE9*/
+  src: url('icon.eot?t=1634272190496#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("icon.woff2?t=1634272190496") format("woff2"),
+  url("icon.woff?t=1634272190496") format("woff"),
+  url('icon.ttf?t=1634272190496') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('icon.svg?t=1634272190496#icon') format('svg'); /* iOS 4.1- */
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icon' !important;
+  font-size: 16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calcicon:before { content: "\ea01"; }
+.icon-dataseticon:before { content: "\ea02"; }
+.icon-explorationicon:before { content: "\ea03"; }
+.icon-modelicon:before { content: "\ea04"; }
+.icon-numericIcon:before { content: "\ea05"; }
+.icon-stringIcon:before { content: "\ea06"; }
+.icon-timeIcon:before { content: "\ea07"; }
+
+$icon-calcicon: "\ea01";
+$icon-dataseticon: "\ea02";
+$icon-explorationicon: "\ea03";
+$icon-modelicon: "\ea04";
+$icon-numericIcon: "\ea05";
+$icon-stringIcon: "\ea06";
+$icon-timeIcon: "\ea07";
+
