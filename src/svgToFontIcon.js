@@ -15,7 +15,7 @@ svgtofont({
   },
   // website = null, no demo html files
   website: {
-    title: "tang personal icon",
+    title: "font icon list",
     // Must be a .svg format image.
     logo: path.resolve(process.cwd(), "svg", "git.svg"),
     version: "0.1",
