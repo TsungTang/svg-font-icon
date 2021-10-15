@@ -1,5 +1,7 @@
 const svgtofont = require("svgtofont")
 const path = require("path")
+const fs = require("fs")
+const fsPromises = require("fs").promises
 
 svgtofont({
   src: path.join(process.cwd(), "/svg/fix"), // svg path
@@ -50,6 +52,21 @@ svgtofont({
     ],
     footerInfo: `Licensed under MIT. (Yes it's free and <a href="https://github.com/jaywcjlove/svgtofont">open-sourced</a>`,
   },
-}).then(() => {
-  console.log("done!")
 })
+  .then(() => {
+    return fsPromises.readFile(
+      path.join(process.cwd(), "font-icons/index.html")
+    )
+  })
+  .then((fileBuffer) => {
+    const newFile = fileBuffer
+      .toString()
+      .replace(
+        `<link rel="stylesheet" href="icon.css" />`,
+        `<link rel="stylesheet" href="./font-icons/icon.css" />`
+      )
+    return fsPromises.writeFile(path.join(process.cwd(), "index.html"), newFile)
+  })
+  .then(() => {
+    console.log("Font icon Done!")
+  })
