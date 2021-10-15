@@ -6,13 +6,14 @@ const fsPromises = require("fs").promises
 svgtofont({
   src: path.join(process.cwd(), "/svg/fix"), // svg path
   dist: path.join(process.cwd(), "font-icons"), // output path
-  fontName: "icon", // font name
+  fontName: "fotIconStyle", // font name
   css: true, // Create CSS files.
   startUnicode: 0xea01, // unicode start number
   svgicons2svgfont: {
     fontHeight: 1000,
     normalize: true,
   },
+  classNamePrefix: "icon",
   // website = null, no demo html files
   website: {
     title: "font icon list",
