@@ -1,10 +1,10 @@
 @font-face {font-family: "fotIconStyle";
-  src: url('fotIconStyle.eot?t=1636917845500'); /* IE9*/
-  src: url('fotIconStyle.eot?t=1636917845500#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("fotIconStyle.woff2?t=1636917845500") format("woff2"),
-  url("fotIconStyle.woff?t=1636917845500") format("woff"),
-  url('fotIconStyle.ttf?t=1636917845500') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('fotIconStyle.svg?t=1636917845500#fotIconStyle') format('svg'); /* iOS 4.1- */
+  src: url('fotIconStyle.eot?t=1646632350490'); /* IE9*/
+  src: url('fotIconStyle.eot?t=1646632350490#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("fotIconStyle.woff2?t=1646632350490") format("woff2"),
+  url("fotIconStyle.woff?t=1646632350490") format("woff"),
+  url('fotIconStyle.ttf?t=1646632350490') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('fotIconStyle.svg?t=1646632350490#fotIconStyle') format('svg'); /* iOS 4.1- */
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -17,19 +17,21 @@
 
 .icon-calcicon:before { content: "\ea01"; }
 .icon-dataseticon:before { content: "\ea02"; }
-.icon-drag:before { content: "\ea03"; }
-.icon-explorationicon:before { content: "\ea04"; }
-.icon-modelicon:before { content: "\ea05"; }
-.icon-numericIcon:before { content: "\ea06"; }
-.icon-stringIcon:before { content: "\ea07"; }
-.icon-timeIcon:before { content: "\ea08"; }
+.icon-detection:before { content: "\ea03"; }
+.icon-drag:before { content: "\ea04"; }
+.icon-explorationicon:before { content: "\ea05"; }
+.icon-modelicon:before { content: "\ea06"; }
+.icon-numericIcon:before { content: "\ea07"; }
+.icon-stringIcon:before { content: "\ea08"; }
+.icon-timeIcon:before { content: "\ea09"; }
 
 $icon-calcicon: "\ea01";
 $icon-dataseticon: "\ea02";
-$icon-drag: "\ea03";
-$icon-explorationicon: "\ea04";
-$icon-modelicon: "\ea05";
-$icon-numericIcon: "\ea06";
-$icon-stringIcon: "\ea07";
-$icon-timeIcon: "\ea08";
+$icon-detection: "\ea03";
+$icon-drag: "\ea04";
+$icon-explorationicon: "\ea05";
+$icon-modelicon: "\ea06";
+$icon-numericIcon: "\ea07";
+$icon-stringIcon: "\ea08";
+$icon-timeIcon: "\ea09";
 
